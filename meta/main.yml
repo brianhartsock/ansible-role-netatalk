@@ -1,0 +1,21 @@
+galaxy_info:
+  role_name: netatalk
+  author: Brian Hartsock
+  description: Ansible role for installing and configuring Netatalk, an AFP file server.
+  license: MIT
+
+  min_ansible_version: 2.4
+
+  platforms:
+  - name: Ubuntu
+    versions:
+    - xenial
+
+  galaxy_tags:
+    - ubuntu
+    - netatalk
+    - afp
+    - osx
+    - mac
+
+dependencies: []

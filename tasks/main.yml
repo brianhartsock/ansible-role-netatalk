@@ -1,0 +1,30 @@
+---
+- name: Include OS-specific variables.
+  include_vars: "{{ ansible_os_family }}.yml"
+- name: Install Netatalk ({{ item }})
+  package:
+    name: '{{ item }}'
+  with_items: '{{ netatalk_packages }}'
+- name: afpd.conf
+  template:
+    src: afpd.conf.j2
+    dest: /etc/netatalk/afpd.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    - restart netatalk
+- name: AppleVolumes.defalut
+  template:
+    src: AppleVolumes.default.j2
+    dest: /etc/netatalk/AppleVolumes.default
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    - restart netatalk
+- name: Start Netatalk Services
+  service:
+    name: netatalk
+    enabled: yes
+    state: started
