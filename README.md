@@ -1,6 +1,8 @@
 ansible-role-netatalk
 =========
 
+[![Build Status](https://travis-ci.org/brianhartsock/ansible-role-netatalk.svg?branch=master)](https://travis-ci.org/brianhartsock/ansible-role-netatalk)
+
 Ansible role to install and configure [Netatalk](http://netatalk.sourceforge.net), an [Apple Filling Protocol](https://en.wikipedia.org/wiki/Apple_Filing_Protocol) (AFP), server. This allows Linux folders to be shared natively to Mac OSX machines.
 
 Combined with [Avahi](https://github.com/brianhartsock/ansible-role-avahi) a Linux server can appear as a native Apple fileserver to Mac OSX machines on the same network.
