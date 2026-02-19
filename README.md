@@ -1,6 +1,8 @@
 ansible-role-netatalk
 =========
 
+**ARCHIVED: This repository is no longer active and hasn't been updated in many years. It's recommended you fork and update or find a different role.**
+
 [![Build Status](https://travis-ci.org/brianhartsock/ansible-role-netatalk.svg?branch=master)](https://travis-ci.org/brianhartsock/ansible-role-netatalk)
 
 Ansible role to install and configure [Netatalk](http://netatalk.sourceforge.net), an [Apple Filling Protocol](https://en.wikipedia.org/wiki/Apple_Filing_Protocol) (AFP), server. This allows Linux folders to be shared natively to Mac OSX machines.
