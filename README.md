@@ -1,7 +1,7 @@
 ansible-role-netatalk
 =========
 
-**ARCHIVED: This repository is no longer active and hasn't been updated in many years. It's recommended you fork and update or find a different role.**
+**DEPRECATED: This role is no longer maintained. I'm now using [Samba](https://github.com/vladgh/ansible-collection-vladgh-samba) instead which has proved faster and more stable**
 
 [![Build Status](https://travis-ci.org/brianhartsock/ansible-role-netatalk.svg?branch=master)](https://travis-ci.org/brianhartsock/ansible-role-netatalk)
 
